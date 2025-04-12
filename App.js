@@ -42,7 +42,6 @@ export default function App() {
         if (direction === 'UP') newHead = { x: head.x, y: head.y - 1 };
         if (direction === 'DOWN') newHead = { x: head.x, y: head.y + 1 };
   
-        // ✅ Collision check right here
         if (newHead.x === food.x && newHead.y === food.y) {
           console.log('ATE FOOD'); // should only trigger once
           setFood(randomFoodPosition(prevSnake));
